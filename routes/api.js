@@ -29,9 +29,6 @@ router.post('/comment/create', comment_controller.create_comment)
 // Post request to delete comment
 router.post('/comment/:id/delete', comment_controller.delete_comment)
 
-// POST request to update comment
-router.post('/comment/:id/update', comment_controller.update_comment);
-
 // GET request for one comment
 router.get('/comment/:id', comment_controller.comment_detail);
 
