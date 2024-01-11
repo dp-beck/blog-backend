@@ -8,6 +8,7 @@ const CommentSchema = new Schema({
     published: { type: Boolean },
     authorName: { type: String, required: true },
     authorEmail: { type: String, required: true },
+    post: [{ type: Schema.Types.ObjectId, ref: "Post" }],
 }, { timestamps: true });
 
 // Virtual for post's url
