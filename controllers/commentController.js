@@ -46,7 +46,8 @@ exports.create_comment = [
             text: req.body.text,
             authorName: req.body.authorName,
             authorEmail: req.body.authorEmail,
-            published: false
+            published: true,
+            post: req.body.post,
         });
 
         // NOTE TO SELF -- NOT SURE IF THIS IS RIGHT BE SURE TO TEST IT
